@@ -1,0 +1,30 @@
+.footer{
+    position:fixed !important;
+    left:0;
+    bottom:0;
+    right:0;
+    text-align: center;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.Header{
+    background-color: rgb(167, 230, 237);
+    
+   
+}
+
+.B1{
+    background-color: rgb(162, 209, 224);
+    padding-bottom: 100p !important;
+}
+
+.xyz{
+    text-align: center;
+  
+}
+
+img{
+    max-height: 200px;
+    border: solid !important;
+}
