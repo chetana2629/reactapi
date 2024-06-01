@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
-
-
+import { useSelector } from "react-redux"
 
 
 function Header(){
-    return (<nav class="navbar navbar-expand-lg bg-body-tertiary " >
+  let ans=useSelector((state)=>state.cart.value)
+//console.log(ans);
+return (<nav class="navbar navbar-expand-lg bg-body-tertiary " >
     <div class="container-fluid Header">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +45,9 @@ function Header(){
           </li>
           <li class="nav-item">
           <Link class="nav-link active" aria-current="page" to="Main">Main Component</Link>
+          </li>
+          <li class="nav-item">
+          <Link class="nav-link active" aria-current="page" to="Cart1">cart1({ans.length})</Link>
           </li>
         </ul>
         <form class="d-flex" role="search">

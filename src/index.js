@@ -7,7 +7,7 @@ import Form from "./components/Form";
 import One from "./components/One";
 import Two from "./components/Two";
 import Error from "./components/Error";
-
+import Cart1 from "./components/Cart1";
 
 import "./Style.css";
 
@@ -64,6 +64,10 @@ var projectroute = createBrowserRouter([
       {
         path: "Main",
         element:<Main></Main>
+      },
+      {
+        path: "Cart1",
+        element:<Cart1></Cart1>
       },
 
     ]
